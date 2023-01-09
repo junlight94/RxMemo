@@ -54,6 +54,4 @@ class MemoryStorage: MemoStorageType {
         
         return Observable.just(memo)
     }
-    
-    
 }
