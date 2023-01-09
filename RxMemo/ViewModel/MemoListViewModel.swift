@@ -29,6 +29,8 @@ class MemoListViewModel: CommonViewModel {
                 }
         }
     }
+    
+    // 메서드
     func performUpdate(memo: Memo) -> Action<String, Void> {
         return Action { input in
             return self.storage.update(memo: memo, content: input).map{ _ in }
@@ -40,4 +42,22 @@ class MemoListViewModel: CommonViewModel {
             return self.storage.delete(memo: memo).map { _ in }
         }
     }
+    
+    // 속성
+    lazy var detailAction: Action<Memo, Void> = {
+        
+        return Action{ memo in
+            
+            let detailViewModel = MemoDetailViewModel(memo: memo, title: "메모 보기", sceneCoordinaotr: self.sceneCoordinator, storage: self.storage)
+            
+            let detailScene = Scene.detail(detailViewModel)
+            
+            return self.sceneCoordinator.transition(to: detailScene, using: .push, animated: true)
+                .asObservable()
+                .map {_ in}
+        }
+        
+    }()
+    
+
 }
