@@ -31,10 +31,34 @@
                     <view key="view" contentMode="scaleToFill" id="8Bk-zo-ccY">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="t3y-9O-h04">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="J3N-Sb-HE8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="t3y-9O-h04" firstAttribute="top" secondItem="8Bk-zo-ccY" secondAttribute="top" id="4bZ-Ed-2wQ"/>
+                            <constraint firstItem="t3y-9O-h04" firstAttribute="leading" secondItem="J3N-Sb-HE8" secondAttribute="leading" id="Oy8-JJ-aBW"/>
+                            <constraint firstAttribute="bottom" secondItem="t3y-9O-h04" secondAttribute="bottom" id="VAi-kU-azd"/>
+                            <constraint firstItem="t3y-9O-h04" firstAttribute="trailing" secondItem="J3N-Sb-HE8" secondAttribute="trailing" id="YYs-T9-hnd"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="새 메모" id="dRn-NA-N8f"/>
+                    <navigationItem key="navigationItem" title="새 메모" id="dRn-NA-N8f">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="tSq-Ph-LFm"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="bqn-Sn-dNa"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cancelButton" destination="tSq-Ph-LFm" id="idC-d9-9Ij"/>
+                        <outlet property="contentTextView" destination="t3y-9O-h04" id="lWc-x5-Rov"/>
+                        <outlet property="saveButton" destination="bqn-Sn-dNa" id="pSR-B2-SGB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wJf-Rj-WZm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -148,6 +172,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
