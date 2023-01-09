@@ -13,6 +13,10 @@
 		088AA6FE296BC28600CA703C /* MemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088AA6FD296BC28600CA703C /* MemoListViewController.swift */; };
 		088AA700296BC2BC00CA703C /* MemoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088AA6FF296BC2BC00CA703C /* MemoDetailViewController.swift */; };
 		088AA702296BC2EA00CA703C /* MemoComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088AA701296BC2EA00CA703C /* MemoComposeViewController.swift */; };
+		088AA704296BC3FE00CA703C /* MemoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088AA703296BC3FE00CA703C /* MemoListViewModel.swift */; };
+		088AA706296BC42500CA703C /* MemoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088AA705296BC42500CA703C /* MemoDetailViewModel.swift */; };
+		088AA708296BC44600CA703C /* MemoComposeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088AA707296BC44600CA703C /* MemoComposeViewModel.swift */; };
+		088AA70A296BC47600CA703C /* ViewModelBindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088AA709296BC47600CA703C /* ViewModelBindableType.swift */; };
 		08BAB036296AB31E009C29B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BAB035296AB31E009C29B7 /* AppDelegate.swift */; };
 		08BAB038296AB31E009C29B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BAB037296AB31E009C29B7 /* SceneDelegate.swift */; };
 		08BAB03D296AB31E009C29B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08BAB03B296AB31E009C29B7 /* Main.storyboard */; };
@@ -29,6 +33,10 @@
 		088AA6FD296BC28600CA703C /* MemoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewController.swift; sourceTree = "<group>"; };
 		088AA6FF296BC2BC00CA703C /* MemoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailViewController.swift; sourceTree = "<group>"; };
 		088AA701296BC2EA00CA703C /* MemoComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoComposeViewController.swift; sourceTree = "<group>"; };
+		088AA703296BC3FE00CA703C /* MemoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewModel.swift; sourceTree = "<group>"; };
+		088AA705296BC42500CA703C /* MemoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailViewModel.swift; sourceTree = "<group>"; };
+		088AA707296BC44600CA703C /* MemoComposeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoComposeViewModel.swift; sourceTree = "<group>"; };
+		088AA709296BC47600CA703C /* ViewModelBindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBindableType.swift; sourceTree = "<group>"; };
 		08BAB032296AB31E009C29B7 /* RxMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08BAB035296AB31E009C29B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08BAB037296AB31E009C29B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +85,10 @@
 		088AA6F2296AB78C00CA703C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				088AA703296BC3FE00CA703C /* MemoListViewModel.swift */,
+				088AA705296BC42500CA703C /* MemoDetailViewModel.swift */,
+				088AA707296BC44600CA703C /* MemoComposeViewModel.swift */,
+				088AA709296BC47600CA703C /* ViewModelBindableType.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -281,11 +293,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				088AA6FC296BBDE200CA703C /* MemoryStorage.swift in Sources */,
+				088AA708296BC44600CA703C /* MemoComposeViewModel.swift in Sources */,
 				088AA700296BC2BC00CA703C /* MemoDetailViewController.swift in Sources */,
+				088AA70A296BC47600CA703C /* ViewModelBindableType.swift in Sources */,
 				08BAB036296AB31E009C29B7 /* AppDelegate.swift in Sources */,
 				088AA6F8296BBBEF00CA703C /* MemoStorageType.swift in Sources */,
 				08BAB038296AB31E009C29B7 /* SceneDelegate.swift in Sources */,
 				08BAB040296AB31E009C29B7 /* RxMemo.xcdatamodeld in Sources */,
+				088AA704296BC3FE00CA703C /* MemoListViewModel.swift in Sources */,
+				088AA706296BC42500CA703C /* MemoDetailViewModel.swift in Sources */,
 				088AA6FE296BC28600CA703C /* MemoListViewController.swift in Sources */,
 				088AA702296BC2EA00CA703C /* MemoComposeViewController.swift in Sources */,
 				088AA6F6296AB8FD00CA703C /* Memo.swift in Sources */,
