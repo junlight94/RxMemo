@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import RxDataSources
 
 // Equatable 프로토콜 채용
-struct Memo: Equatable {
+struct Memo: Equatable, IdentifiableType {
     var content: String
     var insertDate: Date
     var identity: String
